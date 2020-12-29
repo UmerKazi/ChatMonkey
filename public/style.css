@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chat-container{
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 9px 25px #0b2a5b;
+    overflow: hidden;
+    border: 1px solid #0b2a5b;
+    background: #3b3b3b;
+}
+.chat-header {
+    min-height: 50px;
+    overflow: hidden;
+    background: #1b1b1b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #051b3f;
+}
+.chat-header .logo{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    color: #F87E17;
+}
+.logo h3{
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+.chat-header p{
+    margin-right: 20px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.chat-section{
+    padding: 20px;
+}
+.main-wrapper{
+    width: 100%;
+    height: 500px;
+}
+.chat-content{
+    width: 100%;
+    height: 450px;
+    background: white;
+    overflow-y: auto;
+    box-shadow: inset 0 0 1px #111;
+    padding: 0 10px;
+    border-radius: 3px;
+    scrollbar-width: none;
+}
+.chat-container .message{
+    width: 100%;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.message-row{
+    display: grid;
+    grid-template-columns: 70%;
+    margin-bottom: 10px;
+}
+.you-message{
+    justify-content: end;
+    justify-items: end;
+}
+.other-message{
+    justify-content: start;
+    justify-items: start;
+}
+.message-text{
+    padding: 9px 14px;
+    margin-bottom: 5px;
+}
+.message-time{
+    font-size: 13px;
+    color: #777;
+}
+.you-message .message-text{
+    background: #F87E17;
+    color: white;
+    border: 1px solid #F87E17;
+    border-radius: 14px 14px 0 14px;
+}
+.other-message .message-text{
+    background: #eee;
+    color: #111;
+    border: 1px solid #ddd;
+    border-radius: 14px 14px 14px 0;
+}
+.message-title span{
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.msg-tex{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.msg-tex input,
+.msg-tex button{
+    flex: 4;
+    height: 40px;
+    outline: none;
+    border: 1px solid #888;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+.msg-tex button{
+    flex: 1;
+    max-width: 120px;
+    cursor: pointer;
+    color: white;
+    background-color: #F87E17;
+}
+::-webkit-scrollbar{
+    display: none;
+}
