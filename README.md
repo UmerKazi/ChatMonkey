@@ -2,7 +2,7 @@
 A Realtime Online Chatting Web-App Built with NodeJS, Express, and Socket.io
 
 ## Usage
-Click on the link provided in the Repository or visit https://chat-monkey.herokuapp.com/ and input your name to begin chatting. Any other users active will recieve your messages and anyhting you send will be displayed to them, in real time.
+Click on the link provided in the Repository or visit https://chat-monkey.herokuapp.com/ and input your name to begin chatting. Any other users active will recieve your messages and anything you send will be displayed to them, in real time.
 
 ## Screenshots
 Prompt to enter name:
